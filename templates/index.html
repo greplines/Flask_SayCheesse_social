@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ig.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Instagram Reels Clone</title>
+</head>
+<body>
+<div class="container">
+    <div class="imagen">
+        <!-- header starts -->
+        <div class="imagHeader">
+            <span class="material-icons"> arrow_back </span>
+            <h3> Reels </h3>
+            <span class="material-icons"> camera_alt </span>
+        </div>
+        <!-- header ends -->
+        <img src="{{ url_for('video_feed') }}" class="videop">
+
+        <!-- footer starts -->
+        <div class="imagFotter">
+            <div class="imagFotter_text">
+            <img class="user_avatar" src="https://i.ibb.co/1Xczx6B/Guayabobyc.jpg" alt="">
+                <h3> Guayabob&c • <button > Sigueme </button> </h3>
+            </div>
+
+            <div class="imagFotter_ticker">
+                <span class="material-icons"> audiotrack </span>
+                <marquee behavior="" direction="" >Song Name</marquee>
+
+            </div>
+
+            <div class="imagFotter_actions">
+                <div class="imagFotter_actionsLeft">
+                    <span class="material-icons"> favorite </span>
+                    <span class="material-icons"> mode_comment </span>
+                    <span class="material-icons"> send </span>
+                    <span class="material-icons"> more_horiz </span>
+                </div>
+
+                <div class="imagFotter_actionsRight">
+                    <div class="imagFotter_stat">
+                        <span class="material-icons"> favorite </span>
+                        <p> 20 </p>
+                    </div>
+                    <div class="imagFotter_stat">
+                        <span class="material-icons"> mode_comment </span>
+                        <p> 40 </p>
+                    </div>
+                </div>
+           </div>
+        </div>
+             <!-- footer ends -->
+</div>
+
+</body>
+</html>

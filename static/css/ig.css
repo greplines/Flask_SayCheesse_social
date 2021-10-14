@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+}
+.container {
+      position: relative;
+      height: 750px;
+      background-color: white;
+      overflow: scroll;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+ }
+
+ .container::-webkit-scrollbar {
+     display: none;
+   }
+
+   .container {
+     -ms-overflow-style:none;
+     scrollbar-width: none;
+   }
+
+   .imagen {
+      position: relative;
+      height: 100%;
+      width 100$;
+      background-color: white;
+   }
+
+   .videop {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+
+   .imagHeader {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial;
+      font-size: 16px;
+   }
+
+   .imagHeader * {
+       padding: 20px;
+   }
+
+   .imagFotter {
+       position: relative;
+       bottom: 100px;
+       margin-left: 20px;
+
+   }
+
+   .user_avatar {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+   }
+
+   .imagFotter_text {
+     position: absolute;
+     bottom: 0;
+     color: white;
+     display: Flex;
+     align-items: center;
+     margin-bottom: 40px;
+   }
+
+   .imagFotter_text h3 {
+     margin-left: 15px;
+
+   }
+
+   .imagFotter_text h3 {
+     color: white;
+     font-weight: 500%;
+     text-transform: inherit;
+     background: rgba(0, 0, 0, 0);
+     border: none;
+     padding: 5px;
+     font-family: Arial;
+     font-size: 16px;
+   }
+
+   .imagFotter_ticker {
+     width: 60%;
+     margin-left: 30px;
+     margin-bottom: 20px;
+     height: fit-content;
+     font-family: Arial;
+     font-size: 16px;
+   }
+
+   .imagFotter_ticker marquee {
+      font-size: 12px;
+      padding-top: 7px;
+      color: white;
+   }
+
+   .imagFotter_ticker .material-icons {
+      position: absolute;
+      left: 5px;
+      color: white;
+   }
+
+   .imagFotter_actions {
+      display: flex;
+      position: absolute;
+      width: 95%;
+      justify-content: space-between;
+      color: white;
+      font-family: Arial;
+      font-size: 16px;
+   }
+
+   .imagFotter_actionsLeft .material-icons {
+      padding: 0 7px;
+      font-size: 1.6em;
+   }
+   .imagFotter_actionsRight .material-icons {
+      font-size: 25px;
+
+   }
+
+   .imagFotter_actionsRight {
+      display: flex;
+   }
+   .imagFotter_stat {
+       display: flex;
+       align-items: center;
+       margin-right: 10px;
+   }
+
+   .imagFotter_stat p {
+      margin-left: 3px;
+   }
+
